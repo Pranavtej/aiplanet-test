@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 
 import { Container } from '@mui/system';
 import { Grid } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 export default function Cards1(props) {
@@ -16,7 +17,7 @@ export default function Cards1(props) {
 
   return (
 
-
+<Link to="/view" style={{textDecoration:'none'}}>
     <Card sx={{  width:360,height:330 ,  borderRadius: 8}}>
         <Box sx={{ display: 'flex', flexDirection: 'column', paddingLeft:'24px', paddingTop:'45px' , radius:'50px'}}>
             <Container fixed sx={{      }}> 
@@ -86,6 +87,6 @@ borderRadius: '10% 10% ' ,
         </Container>
         </Box>
       
-    </Card>
+    </Card></Link>
   );
 }
